@@ -1,13 +1,35 @@
 import React from "react";
 import UIkit from "uikit";
 
-UIkit.cover();
+UIkit.grid();
 
-function Home(){
-    return(
-        <div class="uk-cover-container uk-height-medium ">
-        <br />
-            <iframe src="https://www.youtube-nocookie.com/embed/YE7VzlLtp-4?autoplay=1&amp;controls=0&amp;showinfo=0&amp;rel=0&amp;loop=1&amp;modestbranding=1&amp;wmode=transparent" width="560" height="315" frameborder="0" allowfullscreen uk-cover></iframe>
+function Home() {
+    return (
+        <div className="uk-child-width-1-2@s uk-grid uk-card uk-card-large uk-card-default">
+            <div className="uk-animation-toggle tabindex">
+                <div className="uk-card uk-card-default uk-card-body uk-animation-shake">
+                    <br />
+                    <br />
+                    <br />
+                    <p className="uk-text-center">JavaScript</p>
+                    <br />
+                    <br />
+                    <br />
+
+                </div>
+                <br />
+            </div>
+            <div className="uk-animation-toggle" tabindex="0">
+                <div className="uk-card uk-card-default uk-card-body uk-animation-slide-right">
+                    <br />
+                    <br />
+                    <br />
+                    <p className="uk-text-center">React</p>
+                    <br />
+                    <br />
+                    < br />
+                </div>
+            </div>
         </div>
     );
 }
