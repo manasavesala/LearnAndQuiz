@@ -57,7 +57,24 @@ function AddQandA(props) {
                 </li>
             </ul>
             <br />
-
+            <ul uk-accordion="multiple: true">
+                <li className="uk-open">
+                    <a className="uk-accordion-title" href="#">Add Q and A to React </a>
+                    <div className="uk-accordion-content">
+                        <form onSubmit={handleNewReactQAFormSubmission}>
+                            <p>Enter question: </p>
+                            <div className="uk-margin">
+                                <input className="uk-input" type="text" id='question' ref={(input) => { _question = input; }} placeholder='enter question' />
+                            </div>
+                            <p>Enter answer: </p>
+                            <div className="uk-margin">
+                                <input className="uk-input" type='text' id='answer' ref={(input) => { _answer = input; }} placeholder='enter answer' />
+                            </div>
+                            <button type='submit'>Add! </button>
+                        </form>
+                    </div>
+                </li>
+            </ul>
         </div>
     );
 }
