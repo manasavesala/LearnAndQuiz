@@ -10,7 +10,7 @@ function Topics() {
             <br />
             <div className="uk-child-width-1-2@s uk-grid uk-card ">
                 <div className="uk-animation-toggle tabindex">
-                    <div className="uk-card uk-card-default uk-card-body uk-animation-shake">
+                    <div className="uk-card uk-card-default uk-card-body uk-animation-slide-left">
                         <br />
                         <br />
                         <br />
@@ -28,6 +28,60 @@ function Topics() {
                         <br />
                         <br />
                         <p className="uk-text-center">React</p>
+                        <br />
+                        <br />
+                        < br />
+                    </div>
+                </div>
+            </div>
+            <br />
+            <div className="uk-child-width-1-2@s uk-grid uk-card ">
+                <div className="uk-animation-toggle tabindex">
+                    <div className="uk-card uk-card-default uk-card-body uk-animation-slide-left">
+                        <br />
+                        <br />
+                        <br />
+                        <p className="uk-text-center"><Link to="/jslist">C#</Link></p>
+                        <br />
+                        <br />
+                        <br />
+
+                    </div>
+                    <br />
+                </div>
+                <div className="uk-animation-toggle" tabindex="0">
+                    <div className="uk-card uk-card-default uk-card-body uk-animation-slide-right">
+                        <br />
+                        <br />
+                        <br />
+                        <p className="uk-text-center">Angular</p>
+                        <br />
+                        <br />
+                        < br />
+                    </div>
+                </div>
+            </div>
+            <br />
+            <div className="uk-child-width-1-2@s uk-grid uk-card ">
+                <div className="uk-animation-toggle tabindex">
+                    <div className="uk-card uk-card-default uk-card-body uk-animation-slide-left">
+                        <br />
+                        <br />
+                        <br />
+                        <p className="uk-text-center"><Link to="/jslist">Java</Link></p>
+                        <br />
+                        <br />
+                        <br />
+
+                    </div>
+                    <br />
+                </div>
+                <div className="uk-animation-toggle" tabindex="0">
+                    <div className="uk-card uk-card-default uk-card-body uk-animation-slide-right">
+                        <br />
+                        <br />
+                        <br />
+                        <p className="uk-text-center">HTML</p>
                         <br />
                         <br />
                         < br />

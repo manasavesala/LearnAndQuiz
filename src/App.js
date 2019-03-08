@@ -6,6 +6,7 @@ import "../node_modules/uikit/dist/css/uikit.css";
 import Home from './components/Home';
 import Quiz from './components/Quiz';
 import Topics from './components/Topics';
+import AddQandA from './components/AddQandA';
 import Videos from './components/Videos';
 import JavascriptList from './components/JavascriptList';
 
@@ -18,10 +19,11 @@ class App extends Component {
           <Header />
           <Switch>
             <Route exact path='/' component={Home} />
-            <Route exact path='/quiz' component={Quiz} />
-            <Route exact path='/videos' component={Videos} />
-            <Route exact path='/topics' component={Topics} />
-            <Route exact path='/jslist' component={JavascriptList} />
+            <Route path='/quiz' component={Quiz} />
+            <Route path='/videos' component={Videos} />
+            <Route path='/topics' component={Topics} />
+            <Route path='/add' component={AddQandA} />
+            <Route path='/jslist' component={JavascriptList} />
           </Switch>
         </div>
       </BrowserRouter>

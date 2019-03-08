@@ -1,14 +1,18 @@
 import React from "react";
 import UIkit from "uikit";
+import bg from '../images/home4.jpg';
 
-UIkit.grid();
+UIkit.parallax();
 
 function Home() {
+    const style = {
+        backgroundImage: 'url(' + bg + ')'
+    };
     return (
-        <div>
-            <h1>Home page</h1>
+        <div className="uk-container">
+
         </div>
-    )
+    );
 }
 
 export default Home;
