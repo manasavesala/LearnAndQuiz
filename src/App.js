@@ -10,6 +10,7 @@ import AddQandA from './components/AddQandA';
 import Videos from './components/Videos';
 import JavascriptList from './components/JavascriptList';
 import ReactList from './components/ReactList';
+import Error404 from './components/Error404';
 
 
 class App extends Component {
@@ -26,6 +27,7 @@ class App extends Component {
             <Route path='/add' component={AddQandA} />
             <Route path='/jslist' component={JavascriptList} />
             <Route path='/reactlist' component={ReactList} />
+            <Route component={Error404} />
           </Switch>
         </div>
       </BrowserRouter>
