@@ -27,7 +27,7 @@ function Topics() {
                         <br />
                         <br />
                         <br />
-                        <p className="uk-text-center">React</p>
+                        <p className="uk-text-center"><Link to="/reactlist">React</Link></p>
                         <br />
                         <br />
                         < br />

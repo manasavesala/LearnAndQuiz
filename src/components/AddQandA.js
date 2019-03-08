@@ -21,6 +21,20 @@ function AddQandA(props) {
         _answer.value = '';
         _question.value = '';
     }
+    function handleNewReactQAFormSubmission(event) {
+        const { dispatch } = props;
+        event.preventDefault();
+        const action = {
+            type: 'ADD_REACTQA',
+            id: v4(),
+            question: _question.value,
+            answer: _answer.value,
+        };
+        dispatch(action);
+
+        _answer.value = '';
+        _question.value = '';
+    }
     return (
         <div>
             <br />
@@ -42,6 +56,8 @@ function AddQandA(props) {
                     </div>
                 </li>
             </ul>
+            <br />
+
         </div>
     );
 }

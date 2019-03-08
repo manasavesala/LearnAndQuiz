@@ -1,13 +1,13 @@
 import constants from './../constants';
 const { initialState, types } = constants;
 
-const ReactReducer = (state = initialState.reactById, action) => {
-    const { question, answer, questionId } = action;
+const reactReducer = (state = initialState.reactById, action) => {
+    const { question, answer, id } = action;
     switch (action.type) {
 
-        case types.ADD_QUESTION:
+        case types.ADD_REACTQA:
             let newState = Object.assign({}, state, {
-                [questionId]: {
+                [id]: {
                     question: question,
                     answer: answer
                 }
@@ -19,4 +19,4 @@ const ReactReducer = (state = initialState.reactById, action) => {
     }
 };
 
-export default ReactReducer;
+export default reactReducer;
