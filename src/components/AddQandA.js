@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { v4 } from 'uuid';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 
 function AddQandA(props) {
     let _question = null;
@@ -78,4 +78,12 @@ function AddQandA(props) {
         </div>
     );
 }
+
+// AddQandA.PropTypes = {
+//     id: PropTypes.string,
+//     question: PropTypes.string,
+//     answer: PropTypes.string
+
+// };
+
 export default connect()(AddQandA);

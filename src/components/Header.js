@@ -17,6 +17,7 @@ function Header() {
             <li><Link style={{ textDecoration: 'none', color: 'black' }} to="/quiz">Quiz</Link></li>
             <li><Link style={{ textDecoration: 'none', color: 'black' }} to="/videos">videos</Link></li>
             <li><Link style={{ textDecoration: 'none', color: 'black' }} to="/add">Add Questions</Link></li>
+            <li><Link style={{ textDecoration: 'none', color: 'black' }} to="/contact">ContactUs</Link></li>
           </ul>
 
         </div>
