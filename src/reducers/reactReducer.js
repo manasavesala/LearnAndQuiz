@@ -3,6 +3,7 @@ const { initialState, types } = constants;
 
 const reactReducer = (state = initialState.reactById, action) => {
     const { question, answer, id } = action;
+    console.log('React Reducer: Recieved action type: ', action.type);
     switch (action.type) {
 
         case types.ADD_REACTQA:
@@ -12,6 +13,7 @@ const reactReducer = (state = initialState.reactById, action) => {
                     answer: answer
                 }
             });
+            console.log('React Reducer: New state: ', newState);
             return newState;
 
         default:

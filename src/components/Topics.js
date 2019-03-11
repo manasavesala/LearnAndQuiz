@@ -1,6 +1,12 @@
 import React from "react";
 import UIkit from "uikit";
 import { Link } from "react-router-dom";
+import reactLogo from '../images/react.jpg';
+import jsLogo from '../images/js.png';
+import csharp from '../images/csharp.png';
+import angular from '../images/angular.png';
+import html from '../images/html.png';
+import css from '../images/css.png';
 
 UIkit.grid();
 
@@ -14,7 +20,7 @@ function Topics() {
                         <br />
                         <br />
                         <br />
-                        <p className="uk-text-center"><Link to="/jslist">JavaScript</Link></p>
+                        <p className="uk-text-center"><Link to="/jslist"><img src={jsLogo} /></Link></p>
                         <br />
                         <br />
                         <br />
@@ -27,7 +33,7 @@ function Topics() {
                         <br />
                         <br />
                         <br />
-                        <p className="uk-text-center"><Link to="/reactlist">React</Link></p>
+                        <p className="uk-text-center"><Link to="/reactlist"><img src={reactLogo} height="225" width="225" /></Link></p>
                         <br />
                         <br />
                         < br />
@@ -41,7 +47,7 @@ function Topics() {
                         <br />
                         <br />
                         <br />
-                        <p className="uk-text-center"><Link to="/jslist">C#</Link></p>
+                        <p className="uk-text-center"><Link to="/jslist"><img src={csharp} height="225" width="225" /></Link></p>
                         <br />
                         <br />
                         <br />
@@ -54,7 +60,7 @@ function Topics() {
                         <br />
                         <br />
                         <br />
-                        <p className="uk-text-center">Angular</p>
+                        <p className="uk-text-center"><img src={angular} height="225" width="225" /></p>
                         <br />
                         <br />
                         < br />
@@ -68,7 +74,7 @@ function Topics() {
                         <br />
                         <br />
                         <br />
-                        <p className="uk-text-center"><Link to="/jslist">Java</Link></p>
+                        <p className="uk-text-center"><img src={html} height="225" width="225" /></p>
                         <br />
                         <br />
                         <br />
@@ -81,7 +87,7 @@ function Topics() {
                         <br />
                         <br />
                         <br />
-                        <p className="uk-text-center">HTML</p>
+                        <p className="uk-text-center"><img src={css} height="325" width="325" /></p>
                         <br />
                         <br />
                         < br />

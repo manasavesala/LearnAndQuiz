@@ -8,7 +8,7 @@
 
 ## Description
 
-_A web page where users can prepare for interviews for programming languages and take a quiz on intrested language._
+_A web application that allows users to prepare and practice for technical interviews by providing content to study and take quizes on intrested language._
 
 ## Minimum Features
 
