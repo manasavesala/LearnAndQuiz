@@ -15,8 +15,7 @@ function Home() {
             <br />
             <br />
             <br />
-            <br />
-            <br />
+
             <div className="uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex uk-flex-top"
                 style={style}>
                 <div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">

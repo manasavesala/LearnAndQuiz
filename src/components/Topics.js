@@ -94,6 +94,40 @@ function Topics() {
                     </div>
                 </div>
             </div>
+            {/* <div className="uk-child-width-1-2@s uk-grid uk-card " uk-scrollspy="cls: uk-animation-fade; target: > div > .uk-card; delay: 500; repeat: true">
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <p className="uk-text-center"><Link to="/jslist"><img src={jsLogo} /></Link></p>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <p className="uk-text-center"><Link to="/reactlist"><img src={reactLogo} height="225" width="225" /></Link></p>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <p className="uk-text-center"><Link to="/csharplist"><img src={csharp} height="225" width="225" /></Link></p>
+                    </div>
+                </div>
+                <br />
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <p className="uk-text-center"><Link to="/angularlist"><img src={angular} height="225" width="225" /></Link></p>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <p className="uk-text-center"><img src={css} height="325" width="325" /></p>
+                    </div>
+                </div>
+                <br />
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <p className="uk-text-center"><img src={html} height="325" width="325" /></p>
+                    </div>
+                </div>
+            </div> */}
         </div>
     );
 }
