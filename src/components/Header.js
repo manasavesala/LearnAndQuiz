@@ -12,12 +12,14 @@ function Header() {
         <div className="uk-navbar-center">
 
           <ul className="uk-navbar-nav">
-            <li className="uk-active"><Link style={{ textDecoration: 'none', color: 'black' }} to="/">Home</Link></li>
-            <li><Link style={{ textDecoration: 'none', color: 'black' }} to="/topics">Topics</Link></li>
-            <li><Link style={{ textDecoration: 'none', color: 'black' }} to="/quiz">Quiz</Link></li>
-            <li><Link style={{ textDecoration: 'none', color: 'black' }} to="/videos">videos</Link></li>
-            <li><Link style={{ textDecoration: 'none', color: 'black' }} to="/add">Add Questions</Link></li>
-            <li><Link style={{ textDecoration: 'none', color: 'black' }} to="/contact">ContactUs</Link></li>
+            <li className="uk-active"><Link style={{ textDecoration: 'none', color: 'black' }} to="/"><h2>Home</h2></Link></li>
+            <li><Link style={{ textDecoration: 'none', color: 'black' }} to="/topics"><h2>Topics</h2></Link></li>
+            <li><Link style={{ textDecoration: 'none', color: 'black' }} to="/quiz"><h2>Quiz</h2></Link></li>
+            <li><Link style={{ textDecoration: 'none', color: 'black' }} to="/videos"><h2>videos</h2></Link></li>
+            <li><Link style={{ textDecoration: 'none', color: 'black' }} to="/add"><h2>Add Questions</h2></Link></li>
+            <li><Link style={{ textDecoration: 'none', color: 'black' }} to="/contact"><h2>ContactUs</h2></Link></li>
+            {/* <li><Link style={{ textDecoration: 'none', color: 'black' }} to="/about">About</Link></li> */}
+
           </ul>
 
         </div>

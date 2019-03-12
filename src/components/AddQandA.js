@@ -153,10 +153,7 @@ function AddQandA(props) {
                         <form onSubmit={handleNewAngularQAFormSubmission}>
                             <p>Enter question: </p>
                             <div className="uk-margin">
-                                <input className="uk-input" type="text" id='question' ref={(input) => {
-                                    console.log('Angular Question Ref - Hello! ;)');
-                                    _questionAngular = input;
-                                }} placeholder='enter question' />
+                                <input className="uk-input" type="text" id='question' ref={(input) => { _questionAngular = input;}} placeholder='enter question' />
                             </div>
                             <p>Enter answer: </p>
                             <div className="uk-margin">

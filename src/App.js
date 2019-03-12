@@ -14,6 +14,7 @@ import CSharpList from './components/CSharpList';
 import AngularList from './components/AngularList';
 import ContactUs from './components/ContactUs';
 import Error404 from './components/Error404';
+import About from './components/About';
 
 
 class App extends Component {
@@ -33,6 +34,7 @@ class App extends Component {
             <Route path='/csharplist' component={CSharpList} />
             <Route path='/angularlist' component={AngularList} />
             <Route path='/contact' component={ContactUs} />
+            <Route path='/about' component={About} />
             <Route component={Error404} />
           </Switch>
         </div>
