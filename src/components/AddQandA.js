@@ -13,6 +13,10 @@ function AddQandA(props) {
     let _questionCSharp = null;
     let _answerCSharp = null;
 
+    let _questionAngular = null;
+    let _answerAngular = null;
+
+
     function handleNewJsQAFormSubmission(event) {
         const { dispatch } = props;
         event.preventDefault();
@@ -57,6 +61,21 @@ function AddQandA(props) {
 
         _answerCSharp.value = '';
         _questionCSharp.value = '';
+    }
+    function handleNewAngularQAFormSubmission(event) {
+        const { dispatch } = props;
+        event.preventDefault();
+        const action = {
+            type: 'ADD_ANGULARQA',
+            id: v4(),
+            question: _questionAngular.value,
+            answer: _answerAngular.value,
+        };
+        console.log('dispatching action: ', action);
+        dispatch(action);
+
+        _answerAngular.value = '';
+        _questionAngular.value = '';
     }
     return (
         <div>
@@ -120,6 +139,28 @@ function AddQandA(props) {
                             <p>Enter answer: </p>
                             <div className="uk-margin">
                                 <input className="uk-input" type='text' id='answer' ref={(input) => { _answerCSharp = input; }} placeholder='enter answer' />
+                            </div>
+                            <button type='submit'>Add! </button>
+                        </form>
+                    </div>
+                </li>
+            </ul>
+            <br />
+            <ul uk-accordion="multiple: true">
+                <li>
+                    <a className="uk-accordion-title" href="#">Add Q and A to Angular </a>
+                    <div className="uk-accordion-content">
+                        <form onSubmit={handleNewAngularQAFormSubmission}>
+                            <p>Enter question: </p>
+                            <div className="uk-margin">
+                                <input className="uk-input" type="text" id='question' ref={(input) => {
+                                    console.log('Angular Question Ref - Hello! ;)');
+                                    _questionAngular = input;
+                                }} placeholder='enter question' />
+                            </div>
+                            <p>Enter answer: </p>
+                            <div className="uk-margin">
+                                <input className="uk-input" type='text' id='answer' ref={(input) => { _answerAngular = input; }} placeholder='enter answer' />
                             </div>
                             <button type='submit'>Add! </button>
                         </form>

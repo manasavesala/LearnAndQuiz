@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
-const CSharpList = ({ CSharpList }) => {
+const AngularList = ({ AngularList }) => {
     const style = {
         listStyleType: 'none'
     }
@@ -15,8 +15,8 @@ const CSharpList = ({ CSharpList }) => {
             <h1>List of Question and Answers:</h1>
             <br />
             {
-                Object.keys(CSharpList).map(questionId => {
-                    let list = CSharpList[questionId];
+                Object.keys(AngularList).map(questionId => {
+                    let list = AngularList[questionId];
                     return <li style={style}>
                         <ul uk-accordion="multiple: true">
                             <li>
@@ -33,14 +33,14 @@ const CSharpList = ({ CSharpList }) => {
     )
 }
 
-CSharpList.propTypes = {
-    CSharpList: PropTypes.object,
+AngularList.propTypes = {
+    AngularList: PropTypes.object,
 };
 
 const mapStateToProps = state => {
     return {
-        CSharpList: state.csharpById
+        AngularList: state.angularById
     };
 };
 
-export default connect(mapStateToProps)(CSharpList);
+export default connect(mapStateToProps)(AngularList);

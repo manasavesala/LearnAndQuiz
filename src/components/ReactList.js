@@ -19,7 +19,7 @@ const ReactList = ({ ReactList }) => {
                     let list = ReactList[questionId];
                     return <li style={style}>
                         <ul uk-accordion="multiple: true">
-                            <li className="uk-open">
+                            <li>
                                 <a className="uk-accordion-title" href="#">{list.question} </a>
                                 <div className="uk-accordion-content">
                                     <p>{list.answer}</p>

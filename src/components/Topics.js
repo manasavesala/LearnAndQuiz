@@ -47,7 +47,7 @@ function Topics() {
                         <br />
                         <br />
                         <br />
-                        <p className="uk-text-center"><Link to="/jslist"><img src={csharp} height="225" width="225" /></Link></p>
+                        <p className="uk-text-center"><Link to="/csharplist"><img src={csharp} height="225" width="225" /></Link></p>
                         <br />
                         <br />
                         <br />
@@ -60,7 +60,7 @@ function Topics() {
                         <br />
                         <br />
                         <br />
-                        <p className="uk-text-center"><img src={angular} height="225" width="225" /></p>
+                        <p className="uk-text-center"><Link to="/angularlist"><img src={angular} height="225" width="225" /></Link></p>
                         <br />
                         <br />
                         < br />
