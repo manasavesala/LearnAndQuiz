@@ -18,6 +18,16 @@ const answerListReact = {
     2: 'answer 2'
 };
 
+const questionListCSharp = {
+    1: 'Question CSharp 1',
+    2: 'Question CSharp 2'
+};
+
+const answerListCSharp = {
+    1: 'answer 1',
+    2: 'answer 2'
+};
+
 export const initialState = {
     javaScriptById: {
         1: {
@@ -37,6 +47,16 @@ export const initialState = {
         2: {
             question: questionListReact[2],
             answer: answerListReact[2]
+        }
+    },
+    csharpById: {
+        1: {
+            question: questionListCSharp[1],
+            answer: answerListCSharp[1]
+        },
+        2: {
+            question: questionListCSharp[2],
+            answer: answerListCSharp[2]
         }
     }
 }
