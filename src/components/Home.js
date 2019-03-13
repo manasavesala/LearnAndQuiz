@@ -21,7 +21,16 @@ function Home() {
 
     return (
         <div className="uk-container">
+
             <br />
+            <br />
+            <br />
+            <div className="uk-text-center">
+                <div className="uk-inline-clip uk-transition-toggle" tabindex="0">
+                    <img src={bg2} alt="" />
+                    <img className="uk-transition-scale-up uk-position-cover" src={bg1} alt="" />
+                </div>
+            </div>
             <br />
             <br />
 
@@ -49,12 +58,6 @@ function Home() {
                 <a className="uk-position-center-right uk-position-small uk-hidden-hover" href="#" data-uk-slidenav-next data-uk-slideshow-item="next">⏭️</a>
 
             </div> */}
-            <div className="uk-text-center">
-                <div className="uk-inline-clip uk-transition-toggle" tabindex="0">
-                    <img src={bg2} alt="" />
-                    <img className="uk-transition-scale-up uk-position-cover" src={bg1} alt="" />
-                </div>
-            </div>
 
             <br /><br /><br />
             <h2>Topics to Learn:</h2>

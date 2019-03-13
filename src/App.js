@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Header from './components/Header'
 import "../node_modules/uikit/dist/css/uikit.css";
@@ -15,7 +17,7 @@ import AngularList from './components/AngularList';
 import ContactUs from './components/ContactUs';
 import Error404 from './components/Error404';
 import About from './components/About';
-
+import QuizList from './components/QuizList';
 
 class App extends Component {
   render() {
@@ -25,7 +27,8 @@ class App extends Component {
           <Header />
           <Switch>
             <Route exact path='/' component={Home} />
-            <Route path='/quiz' component={Quiz} />
+            {/* <Route path='/quizlist'  /> */}
+            <Route path='/quiz' render={() => <QuizList quizList={this.props.quizJSList} />} />
             <Route path='/videos' component={Videos} />
             <Route path='/topics' component={Topics} />
             <Route path='/add' component={AddQandA} />
@@ -42,5 +45,15 @@ class App extends Component {
     );
   }
 }
+App.propTypes = {
+  quizJSList: PropTypes.object
+};
 
-export default App;
+const mapStateToProps = state => {
+  return {
+    quizJSList: state.quizJSList
+  }
+}
+
+
+export default connect(mapStateToProps)(App);

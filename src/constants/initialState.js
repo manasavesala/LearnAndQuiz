@@ -149,5 +149,32 @@ export const initialState = {
             question: questionListAngular[5],
             answer: answerListAngular[5]
         }
+    },
+    quizJSList: {
+        1: {
+            question: 'Inside which HTML element do we put the JavaScript?',
+            choice1: 'js',
+            choice2: 'html',
+            choice3: 'scripts',
+            answer: 'scripts',
+            id: 1
+        },
+        2: {
+            question: 'Where is the correct place to insert a JavaScript?',
+            choice1: 'The <body> section',
+            choice2: 'Both <head> and <body>',
+            choice3: '<head> section',
+            answer: '<head> section',
+            id: 2
+        },
+        3: {
+            question: 'The external JavaScript file must contain the <script> tag.',
+            choice1: 'True',
+            choice2: 'false',
+            choice3: 'none',
+            answer: 'true',
+            id: 3
+        }
+
     }
 }

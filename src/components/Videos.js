@@ -29,7 +29,7 @@ function Videos() {
             <h1>List of Angular videos</h1>
             <div className="uk-cover-container uk-height-medium ">
                 <br />
-                <iframe src="https://www.youtube-nocookie.com/embed/YE7VzlLtp-4?autoplay=1&amp;controls=0&amp;showinfo=0&amp;rel=0&amp;loop=1&amp;modestbranding=1&amp;wmode=transparent" width="560" height="315"></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/wao5aMrt0LA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <br />
         </div>

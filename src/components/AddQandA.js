@@ -16,7 +16,9 @@ function AddQandA(props) {
     let _questionAngular = null;
     let _answerAngular = null;
 
-
+    var style = {
+        marginLeft: '140px'
+    }
     function handleNewJsQAFormSubmission(event) {
         const { dispatch } = props;
         event.preventDefault();
@@ -78,7 +80,7 @@ function AddQandA(props) {
         _questionAngular.value = '';
     }
     return (
-        <div>
+        <div style={style}>
             <br />
             <ul uk-accordion="multiple: true">
                 <li>
