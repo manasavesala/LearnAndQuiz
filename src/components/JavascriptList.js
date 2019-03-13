@@ -9,10 +9,15 @@ const JavascriptList = ({ JavascriptList }) => {
     const style1 = {
         textAlign: 'left'
     }
+    var style2 = {
+        backgroundColor: 'yellow'
+    }
     return (
         <div style={style1}>
             <br />
-            <h1>List of Question and Answers:</h1>
+            <div style={style2}>
+                <h1>List of Question and Answers:</h1>
+            </div>
             <br />
             {
                 Object.keys(JavascriptList).map(questionId => {
@@ -20,7 +25,7 @@ const JavascriptList = ({ JavascriptList }) => {
                     return <li style={style}>
                         <ul uk-accordion="multiple: true">
                             <li>
-                                <a className="uk-accordion-title" href="#">{list.question} 1</a>
+                                <a className="uk-accordion-title" href="#"><h3>{list.question}</h3> </a>
                                 <div className="uk-accordion-content">
                                     <p>{list.answer}</p>
                                 </div>

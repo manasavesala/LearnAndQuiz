@@ -35,19 +35,25 @@ function Home() {
 
             <br />
             <br />
-            <div className="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" data-uk-slideshow>
+            {/* <div className="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" data-uk-slideshow>
 
                 <ul className="uk-slideshow-items">
                     <li>
-                        <img src={bg2} alt="" height="300px" width="200px" data-uk-cover />
+                        <img src={bg2} alt="" data-uk-cover />
                     </li>
                     <li>
-                        <img src={bg1} alt="" height="300px" width="200px" data-uk-cover />
+                        <img src={bg1} alt="" data-uk-cover />
                     </li>
                 </ul>
                 <a className="uk-position-center-left uk-position-small uk-hidden-hover" href="#" data-uk-slidenav-previous data-uk-slideshow-item="previous"></a>
                 <a className="uk-position-center-right uk-position-small uk-hidden-hover" href="#" data-uk-slidenav-next data-uk-slideshow-item="next">⏭️</a>
 
+            </div> */}
+            <div className="uk-text-center">
+                <div className="uk-inline-clip uk-transition-toggle" tabindex="0">
+                    <img src={bg2} alt="" />
+                    <img className="uk-transition-scale-up uk-position-cover" src={bg1} alt="" />
+                </div>
             </div>
 
             <br /><br /><br />
