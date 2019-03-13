@@ -11,6 +11,8 @@ function Videos() {
             <div className="uk-cover-container uk-height-medium ">
                 <br />
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/kl2bM9e-jJc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <br />
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/oxoFVqetl1E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
             </div>
 
