@@ -3,23 +3,27 @@ import Quiz from './Quiz';
 import PropTypes from 'prop-types';
 
 function QuizList(props) {
-    var score = 0;
+    var score = 3;
     return (
         <div>
             <hr />
             <h1>Quiz on Javascript</h1>
             <br />
-            {Object.keys(props.quizList).map(function (id) {
-                var jsList = props.quizList[id];
-                return <Quiz question={jsList.question}
-                    choice1={jsList.choice1}
-                    choice2={jsList.choice2}
-                    choice3={jsList.choice3}
-                    currentRouterPath={props.currentRouterPath}
-                    key={id}
-                    id={id} />;
-            })}
-            <button class="uk-button uk-button-default uk-margin-small-right" type="button" data-uk-toggle="target: #modal-example">Submit</button>
+            <form>
+                {Object.keys(props.quizList).map(function (id) {
+                    var jsList = props.quizList[id];
+                    return <Quiz question={jsList.question}
+                        choice1={jsList.choice1}
+                        choice2={jsList.choice2}
+                        choice3={jsList.choice3}
+                        currentRouterPath={props.currentRouterPath}
+                        key={id}
+                        id={id}
+                    />;
+                })}
+
+                <button class="uk-button uk-button-default uk-margin-small-right" type="button" data-uk-toggle="target: #modal-example">Submit</button>
+            </form>
 
             <div id="modal-example" data-uk-modal>
                 <div class="uk-modal-dialog uk-modal-body">

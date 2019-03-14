@@ -8,7 +8,7 @@
 
 ## Description
 
-_A web application that allows users to prepare and practice for technical interviews by providing content to study and take quizes on intrested language._
+_A web application that allows users to prepare and practice for technical interviews by providing content to study and take quiz on intrested language._
 
 ## Minimum Features
 
@@ -40,9 +40,6 @@ _A web application that allows users to prepare and practice for technical inter
 * _Navigate to the project folder in the terminal._
 * _Authorized user can Add questions to dynamically make changes to site._
 
-## Additional Tools and Technologies
-
-* _None at this time, but this may change as I continue to work on the project._
 
 ## Support and contact details
 

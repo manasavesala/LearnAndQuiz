@@ -7,7 +7,7 @@ UIkit.grid();
 UIkit.modal();
 
 function Quiz(props) {
-
+    var score ;
     return (
         <div>
 
@@ -16,19 +16,17 @@ function Quiz(props) {
                     <a className="uk-accordion-title" href="#"><h1>Quiz on Javascript</h1></a>
                     <div className="uk-accordion-content"> */}
             <p>
-                <form >
-                    <h3>{props.id}. {props.question}</h3>
+                {/* <form > */}
+                <h3>{props.id}. {props.question}</h3>
 
-                    <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid" >
-                        <label><input class="uk-radio" type="radio" name="radio1" /> {props.choice1}</label>
-                        <br />
-                        <label><input class="uk-radio" type="radio" name="radio1" /> {props.choice2}</label>
-                        <br />
-                        <label><input class="uk-radio" type="radio" name="radio1" /> {props.choice3}</label>
-                        <br />
-                    </div>
-                    {/* <button class="uk-button uk-button-default uk-margin-small-right" type="button" data-uk-toggle="target: #modal-example">Submit</button> */}
-                </form>
+                <label><input class="uk-radio" type="radio" name={props.choice2} /> {props.choice1}</label>
+                <br />
+                <label><input class="uk-radio" type="radio" name={props.choice2} /> {props.choice2}</label>
+                <br />
+                <label><input class="uk-radio" type="radio" name={props.choice2} /> {props.choice3}</label>
+                <br />
+                {/* <button class="uk-button uk-button-default uk-margin-small-right" type="button" data-uk-toggle="target: #modal-example">Submit</button> */}
+                {/* </form> */}
                 {/* <div id="modal-example" data-uk-modal>
                     <div class="uk-modal-dialog uk-modal-body">
                         <h2 class="uk-modal-title">Your Score: {score}</h2>
